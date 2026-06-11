@@ -83,6 +83,10 @@ body{
     color: hsl(21, 98%, 58%);
 }
 
+.links:hover{
+    color: hsl(0, 0%, 100%);
+}
+
 .textBox{
     flex:1;
 }
@@ -156,7 +160,6 @@ p.text{
 }
 
 .footerBottom a:hover{
-    text-decoration:underline;
     color: hsl(240, 100%, 20%);
 }
 
@@ -166,7 +169,7 @@ p.text{
 }
 
 .icons:hover{
-    text-decoration: underline;
+    color: inherit;
     color: hsl(240, 100%, 20%);
 
 }
