@@ -80,6 +80,7 @@ body{
 }
 
 .links{
+    color: inherit;
     color: hsl(21, 98%, 58%);
 }
 
