@@ -1,11 +1,31 @@
 html{
     scroll-behavior: smooth;
 }
+#mainPic{
+    height: 120px;
+    margin: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
 body{
     margin:0;
     background-color:#0b0f14;
     color:white;
+}
+
+.navigation{
+    margin-top: 0px;
+    margin-inline: 85px ;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Saira";
+}
+
+.navigation:hover{
+    text-decoration: underline;
+    color: hsl(21, 98%, 58%);
 }
 
 #hero{
@@ -40,6 +60,13 @@ body{
     align-items:center;
 }
 
+.subSections{
+    margin:0;
+    font-family: "Oswald";
+    font-size: 28px;
+    color: hsl(15, 3%, 72%);
+}
+
 .infoSection{
     display:flex;
     align-items:center;
@@ -52,8 +79,24 @@ body{
     flex-direction:row-reverse;
 }
 
+.links{
+    color: hsl(21, 98%, 58%);
+}
+
 .textBox{
     flex:1;
+}
+
+.content{
+    background-color:hsl(0, 0%, 0%);
+    padding:40px;
+}
+
+p.text{
+    margin-top: 0px;
+    font-family: "Saira";
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
 }
 
 .imageBox{
@@ -66,43 +109,19 @@ body{
 
 .imageBox img{
     transition: transform 0.3s ease;
-}
-
-.imageBox img:hover{
-    transform: scale(1.05);
-}
-
-
-.imageBox img{
     width:45%;
     height:auto;
     border-radius:12px;
     object-fit:cover;
 }
 
-#mainPic{
-    height: 120px;
-    margin: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+.imageBox img:hover{
+    transform: scale(1.05);
 }
 
-.content{
-    background-color:hsl(0, 0%, 0%);
-    padding:40px;
-}
-
-.navigation{
-    margin-top: 0px;
-    margin-inline: 85px ;
-    color: hsl(0, 0%, 100%);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: "Saira";
-}
-
-.navigation:hover{
-    border-bottom: 1px solid hsl(0, 0%, 100%);
+.bottom{
+    background-color:hsl(21, 98%, 58%);
+    padding:40px 60px;
 }
 
 .bSections{
@@ -111,44 +130,6 @@ body{
     text-decoration: none;
     font-size: 18px;
     font-family: "Saira";
-}
-
-.bSections:hover{
-    border-bottom: 1px solid hsl(240, 100%, 20%);
-}
-
-.subSections{
-    margin:0;
-    font-family: "Oswald";
-    font-size: 28px;
-    color: hsl(15, 3%, 72%);
-}
-
-p.text{
-    margin-top: 0px;
-    font-family: "Saira";
-    color: hsl(0, 0%, 100%);
-    font-size: 16px;
-}
-
-.bottom{
-    background-color:hsl(21, 98%, 58%);
-    padding:40px 60px;
-}
-
-.fakeBottom{
-    background-color: hsl(21, 98%, 58%);
-}
-
-.map-container{
-    margin-top:10px;
-}
-
-.map-container iframe{
-    width:250px;
-    height:150px;
-    border:0;
-    border-radius:10px;
 }
 
 .footerRow{
@@ -169,29 +150,34 @@ p.text{
 }
 
 .footerBottom a{
-    color:white;
+    color:hsl(0, 0%, 100%);
     text-decoration:none;
     font-family:"Saira";
 }
 
 .footerBottom a:hover{
     text-decoration:underline;
+    color: hsl(240, 100%, 20%);
 }
 
-@media screen and (max-width: 768px) {
+.icons{
+    color: inherit;
+    font-size: 16px;
+}
 
-    header {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .navigation {
-        margin: 0;
-        font-size: 16px;
-    }
+.icons:hover{
+    text-decoration: underline;
+    color: hsl(240, 100%, 20%);
 
 }
 
+.map-container{
+    margin-top:10px;
+}
+
+.map-container iframe{
+    width:250px;
+    height:150px;
+    border:0;
+    border-radius:10px;
+}
